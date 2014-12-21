@@ -1,5 +1,8 @@
 # Model View Presenter
 
+> Example code is available on
+[github.com/vaadin-on-grails/model-view-presenter](https://github.com/vaadin-on-grails/model-view-presenter).
+
 This article shows an example of [Model View Presenter](http://en.wikipedia.org/wiki/Model–view–presenter) implementation. The basic idea is to show a way to split work with domain and service layer and UI view layer, not mixing all together.
 
 > Martin Fowler wrote great article worth reading about [UI patterns](http://martinfowler.com/eaaDev/uiArchs.html).

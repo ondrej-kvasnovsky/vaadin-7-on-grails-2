@@ -1,5 +1,8 @@
 # Widgetset Compilation
 
+> Example code is available on
+[github.com/vaadin-on-grails/widgetset-compilation](https://github.com/vaadin-on-grails/widgetset-compilation).
+
 This article shows how to recompile widgetset when we add an add-on that requires widgetset recompilation.
 
 We will demonstrate how to add [tokenfield](https://vaadin.com/directory#addon/tokenfield:vaadin). But you can use this tutorial in the same way for the other add-ons as well.
@@ -64,9 +67,11 @@ environments {
 }
 ```
 
+We can try to run the application in order to see that the application will not come up. That will show that widgetset compilation is mandatory.
+
 ### Step 4
 
-Use `tokenfield` in your Vaadin code to finish this example.
+We will add a text field on UI. Use `TokenField` in order to finish this example.
 
 ``` java
 package app

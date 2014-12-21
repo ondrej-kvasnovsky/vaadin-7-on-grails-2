@@ -34,7 +34,7 @@ Click on `Finish` and on the next dialog, choose `Run 'create app'`.
 
 ### Step 5
 
-Open file `BuildConfig.groovy` and add Vaadin plugin `compile ":vaadin:7.3.3.2"`.
+Open file `BuildConfig.groovy` and add Vaadin plugin `compile ":vaadin:7.3.6"`.
 
 ![Vaadin plugin](http://vaadinongrails.com/book/1_1_2_build-config-idea.png)
 

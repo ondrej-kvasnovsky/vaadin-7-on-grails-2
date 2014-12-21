@@ -1,5 +1,8 @@
 # Usage
 
+> Example code is available on
+[github.com/vaadin-on-grails/jdbc-template](https://github.com/vaadin-on-grails/jdbc-template).
+
 This article shows a few ways how to use JDBC template by Spring.
 
 ### JdbcTemplate with parameters

@@ -13,4 +13,6 @@ dependencies {
 }
 ```
 
-> Get the version from [Grails Spring security plugin](https://github.com/grails-plugins/grails-spring-security-core/blob/master/grails-app/conf/BuildConfig.groovy).
+> Get the latest version from [Grails Spring security plugin](https://github.com/grails-plugins/grails-spring-security-core/blob/master/grails-app/conf/BuildConfig.groovy).
+
+Follow the next chapters to learn how to setup Spring Security in your project.

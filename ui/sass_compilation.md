@@ -1,5 +1,8 @@
 # SASS Compilation
 
+> Example code is available on
+[github.com/vaadin-on-grails/sass-compilation](https://github.com/vaadin-on-grails/sass-compilation).
+
 SASS compilation will happen automatically, during runtime, in all environments except of production environment. This is handy, because we do not have to recompile SASS files after each change.
 
 If automatic compilation of SASS is not happening, make sure `productionMode` is set to `false` for development environment, in `VaadinConfig.groovy`.

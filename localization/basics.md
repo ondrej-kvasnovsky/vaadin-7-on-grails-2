@@ -1,4 +1,7 @@
-# Basics
+# Localization Basics
+
+> Example code is available on
+[github.com/vaadin-on-grails/localization-basics](https://github.com/vaadin-on-grails/localization-basics).
 
 Localization property files are stored in `grails-app/i18n` folder.
 

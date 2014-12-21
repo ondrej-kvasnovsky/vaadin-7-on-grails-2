@@ -1,8 +1,11 @@
 # Spring Security Basics
 
+> Example code is available on
+[github.com/vaadin-on-grails/spring-security-basics](https://github.com/vaadin-on-grails/spring-security-basics).
+
 We will create basic classes that are required to work with Spring in Grails application.
 
-The first step before you continue with this tutorial, is to enable [Open Session In View](#Open Session In View) to allow lazy loading in GORM. If you do not want OSIV in your project,  set lazy to false on `roles` collection in `User` class.
+The first step before you continue with this tutorial, is to enable OSIV, as described in Open Session In View chapter to allow lazy loading in GORM. If you do not want OSIV in your project,  set lazy to false on `roles` collection in `User` class.
 
 ### Step 1
 
@@ -147,7 +150,7 @@ class UserService {
 
 ### Step 5
 
-Create your implementation of `AuthenticationManager` interface that will authentificate a user.
+Create your implementation of `AuthenticationManager` interface in `src/groovy` that will authentificate a user.
 
 ``` java
 package app.security
@@ -180,7 +183,7 @@ class AuthManager implements AuthenticationManager {
 }
 ```
 
-Then define a new bean, because we need to have it present in the context and we want to autowire `UserService`.
+Open `grails-app/conf/spring/resources.groovy` and define a new bean. We have to have `AuthManager` under Spring controll otherwise autowired would not be done automatically.
 
 ``` java
 import app.security.AuthManager
@@ -217,3 +220,5 @@ class Auth {
     }
 }
 ```
+
+> We do not have to have the `login` method defined as static. Instead, we can define a new bean and autoinject or use `Grails.get(Auth)` where needed.

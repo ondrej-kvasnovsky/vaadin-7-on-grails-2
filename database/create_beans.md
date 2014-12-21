@@ -1,5 +1,8 @@
 # Create Beans
 
+> Example code is available on
+[github.com/vaadin-on-grails/jdbc-template](https://github.com/vaadin-on-grails/jdbc-template).
+
 In this article, we will show how to define beans in order to start working with [spring-jdbc](http://docs.spring.io/autorepo/docs/spring/4.0.6.RELEASE/spring-framework-reference/html/jdbc.html).
 
 ### Step 1

@@ -1,5 +1,8 @@
 # Basics
 
+> Example code is available on
+[github.com/vaadin-on-grails/mybatis](https://github.com/vaadin-on-grails/mybatis).
+
 This article shows how to work with MyBatis in Groovy application. We will fetch data from database and show them on UI.
 
 ### Step 1

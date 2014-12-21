@@ -1,4 +1,7 @@
-# Create Sql
+# Configuration
+
+> Example code is available on
+[github.com/vaadin-on-grails/mybatis](https://github.com/vaadin-on-grails/mybatis).
 
 Because Grails is based on Spring, we can use [mybatis-spring](http://mybatis.github.io/spring/) library to integrate [MyBatis](http://mybatis.github.io/mybatis-3/index.html) into Grails.
 

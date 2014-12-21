@@ -1,4 +1,7 @@
-# Multiple application
+# Multiple UI application
+
+> Example code is available on
+[github.com/vaadin-on-grails/multiple-ui-application](https://github.com/vaadin-on-grails/multiple-ui-application).
 
 In `grails-app/conf/VaadinConfig.groovy`, we can configure URL mapping to Vaadin UI classes. We can define multiple UIs to be accessible from one Grails application.
 
@@ -66,3 +69,6 @@ mapping = [
 ```
 
 Now we can start up the application and access both URLs to see each is mapped to different UI class.
+
+*
+*

@@ -1,5 +1,8 @@
 # Re-using GORM Validations
 
+> Example code is available on
+[github.com/vaadin-on-grails/gorm-validations](https://github.com/vaadin-on-grails/gorm-validations).
+
 When we define validation rules, constraints, in domain class we probably do not want to repeat that validation rules in Vaadin code. We would rather re-use it in Vaadin code for validation of input fields.
 
 We can get constraints from a domain class and use it. Because Vaadin provides many validator, we can use them and fill it with what we have defined in `constraints` for a domain class.

@@ -1,0 +1,1223 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Spring Security Basics | Vaadin on Grails</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../security/spring.html" />
+    
+    
+    <link rel="prev" href="../security/spring_security_dependency.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="6.2" data-basepath=".." data-revision="1414034999136">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="fdsf/README.html">
+            
+                
+                    <a href="../fdsf/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Project setup
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="fdsf/command_line.html">
+            
+                
+                    <a href="../fdsf/command_line.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Command Line
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="fdsf/intellij_idea.html">
+            
+                
+                    <a href="../fdsf/intellij_idea.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         IntelliJ IDEA
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="fdsf/eclipse.html">
+            
+                
+                    <a href="../fdsf/eclipse.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Eclipse
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="fdsf/netbeans.html">
+            
+                
+                    <a href="../fdsf/netbeans.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         NetBeans
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="fdsf/basics.html">
+            
+                
+                    <a href="../fdsf/basics.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         Plugin Configuration
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="fdsf/clean_up.html">
+            
+                
+                    <a href="../fdsf/clean_up.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         Clean up
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="fdsf/best_practices.html">
+            
+                
+                    <a href="../fdsf/best_practices.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         Best Practices
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="database/README.html">
+            
+                
+                    <a href="../database/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Database
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="database/gorm.html">
+            
+                
+                    <a href="../database/gorm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         GORM
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1.1" data-path="database/create_model.html">
+            
+                
+                    <a href="../database/create_model.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                         Create Domain Model
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.1.2" data-path="database/service_layer.html">
+            
+                
+                    <a href="../database/service_layer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                         Transactions
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.1.3" data-path="database/article.html">
+            
+                
+                    <a href="../database/article.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.3.</b>
+                        
+                         Work With Domain
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.1.4" data-path="database/lazyinitializationexception.html">
+            
+                
+                    <a href="../database/lazyinitializationexception.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.4.</b>
+                        
+                         LazyInitializationException
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.1.5" data-path="database/open_session_in_view.html">
+            
+                
+                    <a href="../database/open_session_in_view.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.5.</b>
+                        
+                         Open Session In View
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="database/groovy_sql.html">
+            
+                
+                    <a href="../database/groovy_sql.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Groovy SQL
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.2.1" data-path="database/create_sql.html">
+            
+                
+                    <a href="../database/create_sql.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                         Create Sql
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2.2" data-path="database/basics.html">
+            
+                
+                    <a href="../database/basics.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.2.</b>
+                        
+                         Execute SQLs
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="database/mybatis.html">
+            
+                
+                    <a href="../database/mybatis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         MyBatis
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.3.1" data-path="database/configuration.html">
+            
+                
+                    <a href="../database/configuration.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.1.</b>
+                        
+                         Configuration
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3.2" data-path="database/work_with_entities.html">
+            
+                
+                    <a href="../database/work_with_entities.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.2.</b>
+                        
+                         Basics
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="database/jdbctemplate.html">
+            
+                
+                    <a href="../database/jdbctemplate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         JdbcTemplate
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.4.1" data-path="database/create_beans.html">
+            
+                
+                    <a href="../database/create_beans.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.1.</b>
+                        
+                         Create Beans
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4.2" data-path="database/usage.html">
+            
+                
+                    <a href="../database/usage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.2.</b>
+                        
+                         Usage
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="database/alternatives.html">
+            
+                
+                    <a href="../database/alternatives.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         Clean Up With Alternatives
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="architecture/README.html">
+            
+                
+                    <a href="../architecture/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Architecture
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="architecture/mvp.html">
+            
+                
+                    <a href="../architecture/mvp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         Model View Presenter
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="data_binding.html">
+            
+                
+                    <a href="../data_binding.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Data binding
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="sqlcontainer.html">
+            
+                
+                    <a href="../sqlcontainer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         SQLContainer
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="ui/README.html">
+            
+                
+                    <a href="../ui/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         UI
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="ui/re-using_gorm_validations.html">
+            
+                
+                    <a href="../ui/re-using_gorm_validations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         Re-using GORM Validations
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="ui/async.html">
+            
+                
+                    <a href="../ui/async.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         Async Push
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="ui/multiple_application.html">
+            
+                
+                    <a href="../ui/multiple_application.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         Multiple application
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="ui/sass_compilation.html">
+            
+                
+                    <a href="../ui/sass_compilation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         SASS Compilation
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="ui/widgetset_compilation.html">
+            
+                
+                    <a href="../ui/widgetset_compilation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         Widgetset Compilation
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="security/README.html">
+            
+                
+                    <a href="../security/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Spring Security
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="security/spring_security_dependency.html">
+            
+                
+                    <a href="../security/spring_security_dependency.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         Spring Security Dependency
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="6.2" data-path="security/spring_security_basics.html">
+            
+                
+                    <a href="../security/spring_security_basics.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         Spring Security Basics
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.3" data-path="security/spring.html">
+            
+                
+                    <a href="../security/spring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                         Secured Navigator
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="localization/README.html">
+            
+                
+                    <a href="../localization/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Localization
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="localization/basics.html">
+            
+                
+                    <a href="../localization/basics.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         Localization Basics
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.2" data-path="localization/track_not_localized_keys.html">
+            
+                
+                    <a href="../localization/track_not_localized_keys.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                         Custom MessageSource
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="rest.html">
+            
+                
+                    <a href="../rest.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         REST
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="without_using_root.html">
+            
+                
+                    <a href="../without_using_root.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         Without using root URL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="approach.html">
+            
+                
+                    <a href="../approach.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         Using root URL for Vaadin app
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="plugin_development/README.html">
+            
+                
+                    <a href="../plugin_development/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Plugin development
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="9.1" data-path="plugin_development/github.html">
+            
+                
+                    <a href="../plugin_development/github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                         Github
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.2" data-path="plugin_development/development.html">
+            
+                
+                    <a href="../plugin_development/development.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                         Development
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Vaadin on Grails</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_574">
+                    
+                        <h1 id="spring-security-basics">Spring Security Basics</h1>
+<p>We will create basic classes that are required to work with Spring in Grails application.</p>
+<p>The first step before you continue with this tutorial, is to enable <a href="#Open Session In View">Open Session In View</a> to allow lazy loading in GORM. If you do not want OSIV in your project,  set lazy to false on <code>roles</code> collection in <code>User</code> class.</p>
+<h3 id="step-1">Step 1</h3>
+<p>Create <code>Role</code> domain class that will represent a role assigned to a user. For example, a user can have multiple roles, like admin, client and so on.</p>
+<pre><code class="lang-java">grails create-domain-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">app</span>.<span class="hljs-title">security</span>.<span class="hljs-title">Role</span></span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> app.security
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Role</span> </span>{
+
+    String name
+
+    <span class="hljs-keyword">static</span> constraints = {
+    }
+}
+</code></pre>
+<h3 id="step-2">Step 2</h3>
+<p>Create <code>User</code> domain class that will represent your user.</p>
+<pre><code class="lang-java">grails create-domain-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">app</span>.<span class="hljs-title">security</span>.<span class="hljs-title">User</span></span>
+</code></pre>
+<p>Then implement <code>UserDetails</code> interface from Spring Security and provide all the required fields.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> app.security
+
+<span class="hljs-keyword">import</span> org.springframework.security.core.GrantedAuthority
+<span class="hljs-keyword">import</span> org.springframework.security.core.authority.SimpleGrantedAuthority
+<span class="hljs-keyword">import</span> org.springframework.security.core.userdetails.UserDetails
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">UserDetails</span> </span>{
+
+    String username
+    String password
+    <span class="hljs-keyword">boolean</span> accountNonExpired
+    <span class="hljs-keyword">boolean</span> accountNonLocked
+    <span class="hljs-keyword">boolean</span> credentialsNonExpired
+    <span class="hljs-keyword">boolean</span> enabled
+
+    <span class="hljs-keyword">static</span> hasMany = [roles: Role]
+
+    <span class="hljs-keyword">static</span> constraints = {
+    }
+
+    <span class="hljs-annotation">@Override</span>
+    Collection&lt;? extends GrantedAuthority&gt; getAuthorities() {
+        println roles
+        <span class="hljs-keyword">return</span> roles.collect { Role authority -&gt;
+            <span class="hljs-keyword">new</span> SimpleGrantedAuthority(authority.name)
+        }
+    }
+
+    <span class="hljs-annotation">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isAccountNonExpired</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> accountNonExpired
+    }
+
+    <span class="hljs-annotation">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isAccountNonLocked</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> accountNonLocked
+    }
+
+    <span class="hljs-annotation">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isCredentialsNonExpired</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> credentialsNonExpired
+    }
+
+    <span class="hljs-annotation">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isEnabled</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> enabled
+    }
+}
+</code></pre>
+<h3 id="step-3">Step 3</h3>
+<p>Because we need a user with some roles during development, create a new user with few roles in <code>BootStrap</code>.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> app.security.Role
+<span class="hljs-keyword">import</span> app.security.User
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BootStrap</span> </span>{
+
+    def init = { servletContext -&gt;
+        Role adminRole = <span class="hljs-keyword">new</span> Role(name: <span class="hljs-string">'ADMIN'</span>)
+        adminRole.save(failOnError: <span class="hljs-keyword">true</span>)
+        Role userRole= <span class="hljs-keyword">new</span> Role(name: <span class="hljs-string">'USER'</span>)
+        userRole.save(failOnError: <span class="hljs-keyword">true</span>)
+
+        User user = <span class="hljs-keyword">new</span> User()
+        user.username = <span class="hljs-string">"john"</span>
+        user.password = <span class="hljs-string">"john"</span>
+        user.enabled = <span class="hljs-keyword">true</span>
+        user.accountNonExpired = <span class="hljs-keyword">true</span>
+        user.accountNonLocked= <span class="hljs-keyword">true</span>
+        user.credentialsNonExpired = <span class="hljs-keyword">true</span>
+        user.roles = []
+        user.roles &lt;&lt; userRole
+        user.roles &lt;&lt; adminRole
+        user.save(failOnError: <span class="hljs-keyword">true</span>)
+    }
+    def destroy = {
+    }
+}
+</code></pre>
+<h3 id="step-4">Step 4</h3>
+<p>Now create <code>UserService</code> that will search for user by name and password in the database.</p>
+<pre><code class="lang-java">grails create-service app.security.UserService
+</code></pre>
+<p>We will use this to login the users.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> app.security
+
+<span class="hljs-keyword">import</span> grails.transaction.Transactional
+
+<span class="hljs-annotation">@Transactional</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserService</span> </span>{
+
+    <span class="hljs-function">User <span class="hljs-title">findByUsernameAndPassword</span><span class="hljs-params">(String username, String password)</span> </span>{
+        User user = User.findByUsernameAndPassword(username, password)
+        <span class="hljs-keyword">return</span> user
+    }
+}
+</code></pre>
+<h3 id="step-5">Step 5</h3>
+<p>Create your implementation of <code>AuthenticationManager</code> interface that will authentificate a user.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> app.security
+
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired
+<span class="hljs-keyword">import</span> org.springframework.security.authentication.AuthenticationManager
+<span class="hljs-keyword">import</span> org.springframework.security.authentication.BadCredentialsException
+<span class="hljs-keyword">import</span> org.springframework.security.authentication.UsernamePasswordAuthenticationToken
+<span class="hljs-keyword">import</span> org.springframework.security.core.Authentication
+<span class="hljs-keyword">import</span> org.springframework.security.core.AuthenticationException
+<span class="hljs-keyword">import</span> org.springframework.security.core.GrantedAuthority
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AuthManager</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">AuthenticationManager</span> </span>{
+
+    <span class="hljs-annotation">@Autowired</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> UserService userService
+
+    <span class="hljs-keyword">public</span> Authentication <span class="hljs-title">authenticate</span><span class="hljs-params">(Authentication auth)</span> <span class="hljs-keyword">throws</span> AuthenticationException </span>{
+        String username = (String) auth.principal
+        String password = (String) auth.credentials
+
+        User user = userService.findByUsernameAndPassword(username, password)
+        <span class="hljs-keyword">if</span> (user != <span class="hljs-keyword">null</span>) {
+            Collection&lt;? extends GrantedAuthority&gt; authorities = user.<span class="hljs-function">authorities
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title">UsernamePasswordAuthenticationToken</span><span class="hljs-params">(username, password, authorities)</span>
+        }
+
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title">BadCredentialsException</span><span class="hljs-params">(<span class="hljs-string">"Bad Credentials"</span>)</span>
+    }
+}</span>
+</code></pre>
+<p>Then define a new bean, because we need to have it present in the context and we want to autowire <code>UserService</code>.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> app.security.AuthManager
+
+beans = {
+    authenticationManager(AuthManager)
+}
+</code></pre>
+<h3 id="step-6">Step 6</h3>
+<p>This can be done in many ways, but let&#39;s create a helper class <code>Auth</code> that will encapsulate authentification.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> app.security
+
+<span class="hljs-keyword">import</span> com.vaadin.grails.Grails
+<span class="hljs-keyword">import</span> org.springframework.security.authentication.AuthenticationManager
+<span class="hljs-keyword">import</span> org.springframework.security.authentication.UsernamePasswordAuthenticationToken
+<span class="hljs-keyword">import</span> org.springframework.security.core.Authentication
+<span class="hljs-keyword">import</span> org.springframework.security.core.context.SecurityContextHolder
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Auth</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">static</span> Authentication <span class="hljs-title">login</span><span class="hljs-params">(String username, String password)</span> </span>{
+        UsernamePasswordAuthenticationToken request = <span class="hljs-keyword">new</span> UsernamePasswordAuthenticationToken(username, password)
+
+        AuthenticationManager authenticationManager = Grails.get(AuthenticationManager)
+        Authentication result = authenticationManager.authenticate(request)
+
+        SecurityContextHolder.context.authentication = result
+
+        <span class="hljs-keyword">return</span> result
+    }
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../security/spring_security_dependency.html" class="navigation navigation-prev " aria-label="Previous page: Spring Security Dependency"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../security/spring.html" class="navigation navigation-next " aria-label="Next page: Secured Navigator"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

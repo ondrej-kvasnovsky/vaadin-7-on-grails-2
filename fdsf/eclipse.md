@@ -20,7 +20,7 @@ Type a name of the project and click on `Finish`.
 
 ### Step 3
 
-Open file `BuildConfig.groovy` and add Vaadin plugin `compile ":vaadin:7.3.3.2"`.
+Open file `BuildConfig.groovy` and add Vaadin plugin `compile ":vaadin:7.3.6"`.
 
 ![Setup Grails](http://vaadinongrails.com/book/1_1_4_vaadin.png)
 

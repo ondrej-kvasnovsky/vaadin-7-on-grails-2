@@ -1,5 +1,8 @@
 # Async Push
 
+> Example code is available on
+[github.com/vaadin-on-grails/async-push](https://github.com/vaadin-on-grails/async-push).
+
 Push has been added in [Vaadin plugin](http://grails.org/plugin/vaadin) version 7.3.0.1. Make sure you have this, or later, version of the plugin.
 
 ### Step 1
@@ -57,3 +60,29 @@ class PushView extends VerticalLayout implements View {
 }
 ```
 
+## Step 3
+
+Add Push annotation on your UI class.
+
+``` java
+package app
+
+import app.views.push.PushView
+import com.vaadin.annotations.Push
+import com.vaadin.navigator.Navigator
+import com.vaadin.server.VaadinRequest
+import com.vaadin.ui.UI
+
+@Push
+class MyUI extends UI {
+
+    @Override
+    protected void init(VaadinRequest vaadinRequest) {
+
+        Navigator navigator = new Navigator(this, this)
+        navigator.addView(PushView.VIEW_NAME, PushView)
+
+        navigator.navigateTo(PushView.VIEW_NAME)
+    }
+}
+```

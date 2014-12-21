@@ -1,5 +1,8 @@
 # Secured Navigator
 
+> Example code is available on
+[github.com/vaadin-on-grails/spring-security-basics](https://github.com/vaadin-on-grails/spring-security-basics).
+
 In this article we will show way how to create Vaadin application with secured views, where a view will be viewable by certain role.
 
 ### Step 1
@@ -94,6 +97,8 @@ class UserDataView extends VerticalLayout implements View {
 
     @Override
     void enter(ViewChangeListener.ViewChangeEvent event) {
+        setMargin(true)
+
         addComponent(new Label("Secured content, only after login!"))
     }
 }
@@ -182,6 +187,7 @@ class MyUI extends UI {
     protected void init(VaadinRequest r) {
 
         VerticalLayout layout = new VerticalLayout()
+        layout.setMargin(true)
 
         Navigator navigator = new Navigator(this, this)
 
@@ -200,4 +206,14 @@ class MyUI extends UI {
     }
 }
 ```
+
+### Step 5
+
+Run application `grails run-app` and fill in username and password.
+
+![Login screen](http://vaadinongrails.com/book/6_3_spring-security-login.png)
+
+Click on `Login` button and you will be authentificated and redirected to secured view.
+
+![Login screen](http://vaadinongrails.com/book/6_3_spring-security-secured.png)
 
