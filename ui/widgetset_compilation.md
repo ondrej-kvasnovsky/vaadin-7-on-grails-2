@@ -42,6 +42,15 @@ Create `src/java/app/widgetset.gwt.xml` file with widgetset references.
 </module>
 ```
 
+> If you want to add more add-ons, just add more lines with widget sets.
+```
+<module>
+    <inherits name="org.vaadin.tokenfield.TokenfieldWidgetset"/>
+    <inherits name="org.vaadin.otheraddon1.TheWidgetset"/>
+    <inherits name="org.vaadin.otheraddon2.TheWidgetset"/>
+</module>
+```
+
 ### Step 3
 
 Add the widgetset reference into `VaadinConfig.groovy`.
