@@ -26,6 +26,8 @@ Developers who like object oriented programing and design patterns that result i
 
 ## Grails
 
+Grails 2.x is supported in the book. Support for Grails 3.x is comming soon.
+
 Grails is framework used to build applications in really short time, because it provides:
 
 * Dependency management
