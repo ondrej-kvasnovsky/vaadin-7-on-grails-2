@@ -2,7 +2,7 @@
 
 The book describes how to create project, setup configuration, what code is created automatically and how to clean up the code that will become useless when we use Vaadin for user interface.
 
-We will go through two approaches how to work with database. The first one is GORM, which is the default option. And then few alternatives to GORM that are MyBais, JdbcTemplate and Groovy Sql.
+We will go through two approaches how to work with database. The first one is GORM, which is the default option. And then few alternatives to GORM that are MyBatis, JdbcTemplate and Groovy Sql.
 
 We will look data binding tricks, basic ideas for architecture, how to compose the components using Model View Presenter (MVP).
 
