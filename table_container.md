@@ -26,7 +26,7 @@ class Item {
 
 ### Step 2
 
-Intialize database in `BootStrap`
+Initialize database in `BootStrap`
 
 ``` java
 class BootStrap {
