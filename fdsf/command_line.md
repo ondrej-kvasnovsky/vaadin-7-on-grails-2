@@ -17,7 +17,7 @@ Go to that directory `cd my-app` and open that folder in a text editor of your c
 
 #### Step 3
 
-Open `BuildConfig.groovy` and add latest version of [vaadin](http://grails.org/plugin/vaadin) plugin into compile scope `compile ":vaadin:7.3.6"`.
+Open `BuildConfig.groovy` and add latest version of [vaadin](http://grails.org/plugin/vaadin) plugin into compile scope `compile ":vaadin:{{book.version}}"`.
 
 ![BuildConfig.groovy](http://vaadinongrails.com/book/1_1_build_config.png)
 
