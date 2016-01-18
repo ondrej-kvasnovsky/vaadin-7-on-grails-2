@@ -49,7 +49,7 @@ Create grid.
 
 ### Step 4
 
-Runn application and see the table with GORM objects from database.
+Run application and see the table with GORM objects from database.
 
 
 
