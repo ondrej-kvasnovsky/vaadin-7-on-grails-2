@@ -1,7 +1,7 @@
 # Table Container
 
 > Example code is available on
-[github.com/vaadin-on-grails/gorm-open-session-in-view-ii](https://github.com/vaadin-on-grails/gorm-open-session-in-view-ii).
+[github.com/vaadin-on-grails/gorm-vaadin-table](https://github.com/vaadin-on-grails/gorm-vaadin-table).
 
 In the previous article we have described how to enable OSIV in VaadinConfig.groovy. This tutorial will show way how to do it in the old way, without configuration.
 
