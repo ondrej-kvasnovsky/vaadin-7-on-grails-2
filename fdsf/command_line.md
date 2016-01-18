@@ -6,7 +6,7 @@ Using [Grails command line](http://grails.org/doc/latest/guide/single.html#comma
 
 ## Create application
 
-These instructions are supposed to be executed by using the command line.
+These instructions are supposed to be executed by using the command line. 
 
 #### Step 1
 Open your console and run `grails create-app my-app` that will create new directory called **my-app** with sample Grails application.
@@ -17,7 +17,7 @@ Go to that directory `cd my-app` and open that folder in a text editor of your c
 
 #### Step 3
 
-Open `BuildConfig.groovy` and add latest version of [vaadin](http://grails.org/plugin/vaadin) plugin into compile scope `compile ":vaadin:7.3.6"`.
+Open `BuildConfig.groovy` and add latest version of [vaadin](http://grails.org/plugin/vaadin) plugin into compile scope `compile ":vaadin:7.6.1"`.
 
 ![BuildConfig.groovy](http://vaadinongrails.com/book/1_1_build_config.png)
 
