@@ -3,9 +3,7 @@
 > Example code is available on
 [github.com/vaadin-on-grails/gorm-vaadin-table](https://github.com/vaadin-on-grails/gorm-vaadin-table).
 
-In the previous article we have described how to enable OSIV in VaadinConfig.groovy. This tutorial will show way how to do it in the old way, without configuration.
-
-The other way to use OSIV in Grails with Vaadin is to manually add an extra filter `OpenSessionInViewFilter` into `web.xml` file.
+In this tutorial we will show how to display GORM objects in Vaadin Grid.
 
 ### Step 1
 
