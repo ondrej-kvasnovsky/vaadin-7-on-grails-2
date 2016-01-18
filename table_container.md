@@ -85,12 +85,6 @@ class MyUI extends UI {
 
         layout.addComponent(grid)
 
-        // example of how to get Grails service and call a method
-        // List<User> users = Grails.get(UserService).getListOfUsers()
-        //    for (User user : users) {
-        //    	layout.addComponent(new Label(user.name))
-        // }
-
         setContent(layout)
     }
 }
