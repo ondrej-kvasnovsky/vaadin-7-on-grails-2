@@ -9,3 +9,24 @@ The other way to use OSIV in Grails with Vaadin is to manually add an extra filt
 
 ### Step 1
 
+
+``` java
+class BootStrap {
+
+    def init = { servletContext ->
+        new Item(name: "Hi 1", other: "There").save(failOnError: true)
+        new Item(name: "Hi 2", other: "There").save(failOnError: true)
+        new Item(name: "Hi 3", other: "There").save(failOnError: true)
+        new Item(name: "Hi 4", other: "There").save(failOnError: true)
+    }
+    def destroy = {
+    }
+}
+
+```
+
+Leave only `web.xml` and remove folders `artifacts`, `scaffolding` and `testing`.
+
+![Generated templates](http://vaadinongrails.com/book/2_1_6_OSIV.png)
+
+### Step 2
