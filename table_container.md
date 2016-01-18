@@ -26,6 +26,8 @@ class Item {
 
 ### Step 2
 
+Intialize database in `BootStrap`
+
 ``` java
 class BootStrap {
 
@@ -38,11 +40,6 @@ class BootStrap {
     def destroy = {
     }
 }
-
 ```
 
-Leave only `web.xml` and remove folders `artifacts`, `scaffolding` and `testing`.
-
-![Generated templates](http://vaadinongrails.com/book/2_1_6_OSIV.png)
-
-### Step 2
+### Step 3
