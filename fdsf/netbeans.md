@@ -28,7 +28,7 @@ Also configure Grails version that will be used for your project.
 
 ### Step 3
 
-Open `BuildConfig.groovy` and add dependency to vaadin plugin `compile ":vaadin:7.3.6"`.
+Open `BuildConfig.groovy` and add dependency to vaadin plugin `compile ":vaadin:7.6.1"`.
 
 > The latest version of the plugin is always available on http://grails.org/plugin/vaadin
 
