@@ -52,5 +52,4 @@ Create grid.
 Run application and see the table with GORM objects from database.
 
 
-
-gorm-vaadin-table.png
+![MVP running app](http://vaadinongrails.com/book/gorm-vaadin-table.png)
