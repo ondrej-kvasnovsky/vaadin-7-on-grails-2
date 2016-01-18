@@ -84,7 +84,7 @@ You can provide name of the [themes](https://vaadin.com/book/vaadin7/-/page/them
 
 You can specify exact version of Vaadin for SASS compilation.
 
-    sassCompile = '7.2.5'
+    sassCompile = '7.6.1'
 
 ### widgetset
 
