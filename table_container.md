@@ -9,6 +9,8 @@ The other way to use OSIV in Grails with Vaadin is to manually add an extra filt
 
 ### Step 1
 
+Create a domain object `Item` with two String fields `name` and `other`.
+
 ``` java
 package com.vaadinongrails
 
