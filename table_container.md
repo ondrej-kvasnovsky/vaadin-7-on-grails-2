@@ -8,3 +8,4 @@ In the previous article we have described how to enable OSIV in VaadinConfig.gro
 The other way to use OSIV in Grails with Vaadin is to manually add an extra filter `OpenSessionInViewFilter` into `web.xml` file.
 
 ### Step 1
+
