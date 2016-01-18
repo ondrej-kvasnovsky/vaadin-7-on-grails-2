@@ -72,5 +72,5 @@ When you try to execute the application, you the account will be already loaded 
 
 This also makes sense from performance point of view, because we will avoid multiple database calls and the user and account will be loaded together, in single database call.
 
-Another approach is to have open session in during each request. Read the next two articles about Open Session In View to find out how to implement it in your application.
+Another approach is to have open session for each request. Read the next two articles about Open Session In View to find out how to implement it in your application.
 
