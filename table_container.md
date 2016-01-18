@@ -46,7 +46,7 @@ class BootStrap {
 
 Create instance of `Grid` in Vaadin code. We need to do two things to see GORM objects nicely displayed in the grid: 
 
-1. Create new `BeanItemContainer` and add GORM objects into it
+1. Create new `BeanItemContainer` and add GORM objects into it.
 2. GORM object contains more fields then we have defined and we have to pick what columns will be visible. Then we have to remove the others which are not supposed to be visible.
 
 
