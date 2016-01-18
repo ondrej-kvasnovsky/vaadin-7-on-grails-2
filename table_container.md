@@ -9,6 +9,20 @@ The other way to use OSIV in Grails with Vaadin is to manually add an extra filt
 
 ### Step 1
 
+``` java
+package com.vaadinongrails
+
+class Item {
+
+    String name
+    String other
+
+    static constraints = {
+    }
+}
+```
+
+### Step 2
 
 ``` java
 class BootStrap {
