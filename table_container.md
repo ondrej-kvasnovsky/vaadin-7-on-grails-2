@@ -26,7 +26,7 @@ class Item {
 
 ### Step 2
 
-Initialize database in `BootStrap`
+Create few records of Item in database in `BootStrap.groovy` file.
 
 ``` java
 class BootStrap {
